@@ -1,47 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-
-<title>Json3 Example</title>
-</head>
 <body>
 
+<p>Looping through arrays inside arrays.</p>
+ 
+<p id="demo"></p>
+<script>
+var myObj,i,j,x= "";
+myObj={"Name":"Aakifha",
+       "Age":"Twenty",
+       "Cars":[ 
+       {"Name" :"Ford","models":["Fiesta","Focus","Mustang"]},
+       {"Name" :"BMW","models":["320","X3","X5"]},
+       {"Name" :"GMC","models":["696","Panda"]}]
+       }
+       
+for(i in myObj.Cars)
+{
+	x +="<h2>" + myObj.Cars[i].Name + "</h2>";
+	for(j in myObj.Cars[i].models) 
+	{
+		x += myObj.Cars[i].models[j] + "<br>";
+	}
+}
 
-	<h1>Looping through arrays inside array</h1>
+document.getElementById("demo").innerHTML=x;
 
-	<ul class="wrapper"></ul>
-
-	
-	<script type="text/javascript">
-	
-		var obj = {
-			"name": "Aaron",
-			"age": "20",
-			"cars":[
-				{"name": "Ford",
-				"models": ["Fiesta", "Focus"]},
-				{"name": "BMW",
-				"models": ["X3", "X4"]},
-				{"name": "Maruti",	
-				"models": ["800", "swift"]}					
-								
-			]
-		}
-
-		var x;
-
-		for(var i in obj.cars){
-			x+="<li>"+obj.cars[i].name+"</li>";
-			for(var j in obj.cars[i].models){
-				x+= obj.cars[i].models[j]+"<br>";
-			}
-		}
-
-		document.querySelector(".wrapper").innerHTML = x;
-
-	</script>
-
-
+</script>
 </body>
 </html>
+	

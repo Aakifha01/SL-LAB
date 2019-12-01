@@ -1,46 +1,19 @@
-<!DOCTYPE html>
 <html>
 <head>
-
-	<style>
+<script language = "javascript">
+var object1={ "Detective" : "Hercule Poirot", "Author" : "Agatha Cristie"};
+	document.write("<h1>JSON with javascript example</h1>");
+	document.write("<br>");
+	document.write("<h3>Detective =" +object1.Detective+"</h3>");
+	document.write("<h3>Author =" +object1.Author+"</h3>");
+var object2={ "Series" : "Famous Five", "Author" : "Eind Bytolh"};
+	document.write("<br>");
+	document.write("<h3>Series =" +object2.Series+"</h3>");
+	document.write("<h3>Author =" +object2.Author+"</h3>");
 	
-		html{
-			width: 60%;
-			height: 100vh;
-			margin: auto;
-		}		
-
-	</style>
-
-<title>Json1Example</title>
+	document.write("<hr/>");
+	document.write(object1.Detective+" Detective stroies author is" +obejct1.Author);
+	
+</script>
 </head>
-<body>
-
-	
-
-
-
-
-	<script type="text/javascript">
-		var object1 = {
-			"detective": "Hercule Poirot",
-			"author": "Agatha Christie",
-		};
-		
-		document.write("<h1>Json with JavaScript Example</h1><hr>");
-		document.write("<h2>Detective: "+object1.detective+"</h2>");
-		document.write("<h2>Author: "+object1.author+"</h2>");
-
-		var object2 = {
-			"series": "Famous Five",
-			"author": "Enid Blyton"
-		}
-	
-		document.write("<h1>Book</h1><hr>");
-		document.write("<h2>Book name: "+object2.series+"</h2>");
-		document.write("<h2>Author name: "+object2.author+"</h2>");
-	
-	</script>
-
-</body>
 </html>

@@ -1,26 +1,17 @@
-students = {
-	"1MS17IS100": "Rosie",
-	"1MS17IS101": "Ashok",
-  	"1MS17IS102": "Rekha",
-  	"1MS17IS103": "Roshan"
-}
-
-list1 = ["value1", "value2", "value3", "value4"]
-
-list2 = []
-
+students={"1ms17is100":"abc","1ms17is101":"aaa","1ms17is102":"abb"}
+lst=["value1","value2","value3"]
+lst2=[]
 j=0
-
-#Printing student names
 for i in students:
-	print("Key is: ", i," Value is: ", students[i])
-	list1[j] = students[i]
-	#list2[j] = i
-	j = j+1
+	print("key is ",i," Value is ",students[i])
+	lst[j]=students[i]
+	j=j+1
 
-print(list1)
-#print(list2)
-
+print(lst)
 print(students.keys())
 print(students.values())
 print(students.items())
+
+lst3={"1":3}
+for n in lst3:
+	print(n)

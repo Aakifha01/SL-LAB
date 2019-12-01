@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-
-<title>Json2 Example</title>
-</head>
 <body>
 
+<p>To access an array value of a JSON object.</p>
+ 
+<p id="demo"></p>
+<script>
+  
+var myObj, x;
+myObj={"Name" : "Aakifha",
+       "Age":"Sixteen",
+       "Cars":["Ford","BMW","GMC"]};
 
-	<h1>Access an array value of a JSON object!!</h1>
+x=myObj.Cars[2];
+document.getElementById("demo").innerHTML=x;
 
-	<div class="wrapper"></div>
-
-	
-	<script type="text/javascript">
-	
-		var obj = {
-			"name": "Rosie",	
-			"age": 20,
-			"cars": ["Altis", "City", "BMW"]
-		};
-
-		 document.querySelector(".wrapper").innerHTML = obj.cars[0];
-
-	</script>
-
-
+</script>
 </body>
 </html>
+	
